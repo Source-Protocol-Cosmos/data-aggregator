@@ -3,8 +3,9 @@ package cmd
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/yaml.v3"
 	"runtime"
+
+	"gopkg.in/yaml.v3"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
