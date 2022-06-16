@@ -8,17 +8,17 @@ import (
 	"syscall"
 	"time"
 
-	parsecmdtypes "github.com/forbole/juno/v3/cmd/parse/types"
+	parsecmdtypes "github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/types"
 
-	"github.com/forbole/juno/v3/logging"
+	"github.com/Source-Protocol-Cosmos/juno/v3/logging"
 
-	"github.com/forbole/juno/v3/types/config"
+	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
 
 	"github.com/go-co-op/gocron"
 
-	"github.com/forbole/juno/v3/modules"
-	"github.com/forbole/juno/v3/parser"
-	"github.com/forbole/juno/v3/types"
+	"github.com/Source-Protocol-Cosmos/juno/v3/modules"
+	"github.com/Source-Protocol-Cosmos/juno/v3/parser"
+	"github.com/Source-Protocol-Cosmos/juno/v3/types"
 
 	"github.com/spf13/cobra"
 )

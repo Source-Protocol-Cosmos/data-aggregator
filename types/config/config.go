@@ -3,10 +3,10 @@ package config
 import (
 	"strings"
 
-	databaseconfig "github.com/forbole/juno/v3/database/config"
-	loggingconfig "github.com/forbole/juno/v3/logging/config"
-	nodeconfig "github.com/forbole/juno/v3/node/config"
-	parserconfig "github.com/forbole/juno/v3/parser/config"
+	databaseconfig "github.com/Source-Protocol-Cosmos/juno/v3/database/config"
+	loggingconfig "github.com/Source-Protocol-Cosmos/juno/v3/logging/config"
+	nodeconfig "github.com/Source-Protocol-Cosmos/juno/v3/node/config"
+	parserconfig "github.com/Source-Protocol-Cosmos/juno/v3/parser/config"
 )
 
 var (

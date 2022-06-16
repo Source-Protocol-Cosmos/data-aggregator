@@ -3,12 +3,12 @@ package main
 import (
 	"os"
 
-	"github.com/forbole/juno/v3/cmd/parse/types"
+	"github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/types"
 
-	"github.com/forbole/juno/v3/modules/messages"
-	"github.com/forbole/juno/v3/modules/registrar"
+	"github.com/Source-Protocol-Cosmos/juno/v3/modules/messages"
+	"github.com/Source-Protocol-Cosmos/juno/v3/modules/registrar"
 
-	"github.com/forbole/juno/v3/cmd"
+	"github.com/Source-Protocol-Cosmos/juno/v3/cmd"
 )
 
 func main() {
