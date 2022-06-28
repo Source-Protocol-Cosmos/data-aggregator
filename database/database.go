@@ -44,6 +44,21 @@ type Database interface {
 
 	// Close closes the connection to the database
 	Close()
+
+	// WASMX extras
+	// Tokens
+    SaveToken(token types.Token) error 
+
+	// Codes
+	SaveCode(code types.Code) error 
+	SetCodeData(data types.CodeData) error 
+	GetCodeData(codeID uint64) (*types.CodeData, error) 
+
+	// Contracts
+	SaveContract(contract types.Contract, gas, fees int64) error 
+	UpdateContractStats(contract string, tx, gas, fees int64) error 
+	SaveContractCodeID(contract string, codeID uint64) error 
+	UpdateContractAdmin(contract string, admin string) error 
 }
 
 // PruningDb represents a database that supports pruning properly

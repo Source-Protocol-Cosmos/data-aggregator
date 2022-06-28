@@ -1,6 +1,8 @@
 package registrar
 
 import (
+	"fmt"
+
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
@@ -16,8 +18,12 @@ import (
 
 	"github.com/Source-Protocol-Cosmos/juno/v3/modules"
 	"github.com/Source-Protocol-Cosmos/juno/v3/modules/messages"
+	"github.com/Source-Protocol-Cosmos/juno/v3/modules/wasm"
 
 	"github.com/Source-Protocol-Cosmos/juno/v3/database"
+
+	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
+	junoremote "github.com/Source-Protocol-Cosmos/juno/v3/node/remote"
 )
 
 // Context represents the context of the modules registrar
@@ -85,10 +91,22 @@ func NewDefaultRegistrar(parser messages.MessageAddressesParser) *DefaultRegistr
 
 // BuildModules implements Registrar
 func (r *DefaultRegistrar) BuildModules(ctx Context) modules.Modules {
+	remoteCfg, ok := ctx.JunoConfig.Node.Details.(*junoremote.Details)
+	if !ok {
+		panic(fmt.Errorf("invalid remote grpc config"))
+	}
+
+	grpcConnection, err := junoremote.CreateGrpcConnection(remoteCfg.GRPC)
+	if err != nil {
+		panic(err)
+	}
+
+	client := wasmtypes.NewQueryClient(grpcConnection)
 	return modules.Modules{
 		pruning.NewModule(ctx.JunoConfig, ctx.Database, ctx.Logger),
 		messages.NewModule(r.parser, ctx.EncodingConfig.Marshaler, ctx.Database),
 		telemetry.NewModule(ctx.JunoConfig),
+		wasm.NewModule(ctx.Database, client),
 	}
 }
 
