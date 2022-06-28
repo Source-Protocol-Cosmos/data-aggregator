@@ -47,7 +47,7 @@ type Database interface {
 
 	// WASMX extras
 	// Tokens
-    SaveToken(token types.Token) error 
+	SaveToken(token types.Token) error 
 
 	// Codes
 	SaveCode(code types.Code) error 
