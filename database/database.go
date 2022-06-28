@@ -3,11 +3,11 @@ package database
 import (
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 
-	"github.com/forbole/juno/v3/logging"
+	"github.com/Source-Protocol-Cosmos/juno/v3/logging"
 
-	databaseconfig "github.com/forbole/juno/v3/database/config"
+	databaseconfig "github.com/Source-Protocol-Cosmos/juno/v3/database/config"
 
-	"github.com/forbole/juno/v3/types"
+	"github.com/Source-Protocol-Cosmos/juno/v3/types"
 )
 
 // Database represents an abstract database that can be used to save data inside it
@@ -44,6 +44,21 @@ type Database interface {
 
 	// Close closes the connection to the database
 	Close()
+
+	// WASMX extras
+	// Tokens
+	SaveToken(token types.Token) error 
+
+	// Codes
+	SaveCode(code types.Code) error 
+	SetCodeData(data types.CodeData) error 
+	GetCodeData(codeID uint64) (*types.CodeData, error) 
+
+	// Contracts
+	SaveContract(contract types.Contract, gas, fees int64) error 
+	UpdateContractStats(contract string, tx, gas, fees int64) error 
+	SaveContractCodeID(contract string, codeID uint64) error 
+	UpdateContractAdmin(contract string, admin string) error 
 }
 
 // PruningDb represents a database that supports pruning properly
