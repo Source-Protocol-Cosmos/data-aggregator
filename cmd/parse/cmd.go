@@ -3,11 +3,11 @@ package parse
 import (
 	"github.com/spf13/cobra"
 
-	parsecmdtypes "github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/types"
+	parsecmdtypes "github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd/parse/types"
 
-	parseblocks "github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/blocks"
-	parsegenesis "github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/genesis"
-	parsetransactions "github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/transactions"
+	parseblocks "github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd/parse/blocks"
+	parsegenesis "github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd/parse/genesis"
+	parsetransactions "github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd/parse/transactions"
 )
 
 // NewParseCmd returns the Cobra command allowing to parse some chain data without having to re-sync the whole database

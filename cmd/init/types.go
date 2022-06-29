@@ -3,7 +3,7 @@ package init
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 )
 
 // WritableConfig represents a configuration that can be written to a file

@@ -5,7 +5,7 @@ import (
 	tmctypes "github.com/tendermint/tendermint/rpc/core/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types"
 )
 
 // findValidatorByAddr finds a validator by a consensus address given a set of

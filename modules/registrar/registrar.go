@@ -6,24 +6,24 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/node"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/node"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/telemetry"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/telemetry"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/logging"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/logging"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/pruning"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/pruning"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/messages"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/wasm"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/messages"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/wasm"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/database"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database"
 
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
-	junoremote "github.com/Source-Protocol-Cosmos/juno/v3/node/remote"
+	junoremote "github.com/Source-Protocol-Cosmos/data-aggregator/v3/node/remote"
 )
 
 // Context represents the context of the modules registrar

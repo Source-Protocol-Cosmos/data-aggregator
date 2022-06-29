@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/cw20"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/cw20"
 
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"

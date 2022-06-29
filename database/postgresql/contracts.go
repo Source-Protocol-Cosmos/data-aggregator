@@ -1,7 +1,7 @@
 package postgresql
 
 import (
-	"github.com/Source-Protocol-Cosmos/juno/v3/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types"
 )
 
 // SaveContract allows to save the given contract into the database.

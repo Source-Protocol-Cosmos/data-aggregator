@@ -32,8 +32,8 @@ import (
 	"github.com/tendermint/tendermint/store"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/node"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/node"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types"
 
 	"path"
 	"time"

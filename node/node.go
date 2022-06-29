@@ -6,7 +6,7 @@ import (
 	constypes "github.com/tendermint/tendermint/consensus/types"
 	tmctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types"
 )
 
 type Node interface {

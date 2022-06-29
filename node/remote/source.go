@@ -5,7 +5,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/node"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/node"
 )
 
 var (

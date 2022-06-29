@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/parser"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/parser"
 
-	nodebuilder "github.com/Source-Protocol-Cosmos/juno/v3/node/builder"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	nodebuilder "github.com/Source-Protocol-Cosmos/data-aggregator/v3/node/builder"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/database"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	modsregistrar "github.com/Source-Protocol-Cosmos/juno/v3/modules/registrar"
+	modsregistrar "github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/registrar"
 )
 
 // GetParserContext setups all the things that can be used to later parse the chain state

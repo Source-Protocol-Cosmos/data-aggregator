@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 
 	"github.com/spf13/cobra"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types"
 )
 
 // ReadConfigPreRunE represents a Cobra cmd function allowing to read the config before executing the command itself

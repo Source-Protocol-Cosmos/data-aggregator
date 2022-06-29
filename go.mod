@@ -1,4 +1,4 @@
-module github.com/Source-Protocol-Cosmos/juno/v3
+module github.com/Source-Protocol-Cosmos/data-aggregator/v3
 
 go 1.17
 

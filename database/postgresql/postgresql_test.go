@@ -11,10 +11,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/database"
-	databaseconfig "github.com/Source-Protocol-Cosmos/juno/v3/database/config"
-	postgres "github.com/Source-Protocol-Cosmos/juno/v3/database/postgresql"
-	"github.com/Source-Protocol-Cosmos/juno/v3/logging"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database"
+	databaseconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/database/config"
+	postgres "github.com/Source-Protocol-Cosmos/data-aggregator/v3/database/postgresql"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/logging"
 )
 
 func TestDatabaseTestSuite(t *testing.T) {

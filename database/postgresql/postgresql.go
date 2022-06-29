@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/logging"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/logging"
 
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 	"github.com/lib/pq"
 
 	_ "github.com/lib/pq" // nolint
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/database"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 )
 
 // Builder creates a database connection with the given database connection info

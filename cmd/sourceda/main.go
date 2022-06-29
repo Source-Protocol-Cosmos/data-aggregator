@@ -3,12 +3,12 @@ package main
 import (
 	"os"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/types"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd/parse/types"
 
 	wasmapp "github.com/CosmWasm/wasmd/app"
-	"github.com/Source-Protocol-Cosmos/juno/v3/cmd"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/messages"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/registrar"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/messages"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/registrar"
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 	"github.com/cosmos/cosmos-sdk/std"
 )
@@ -22,7 +22,7 @@ func MakeEncodingConfig() params.EncodingConfig {
 }
 func main() {
 	// JunoConfig the runner
-	config := cmd.NewConfig("juno").
+	config := cmd.NewConfig("sourceda").
 		WithParseConfig(types.NewConfig().
 			WithRegistrar(registrar.NewDefaultRegistrar(
 				messages.CosmosMessageAddressesParser,

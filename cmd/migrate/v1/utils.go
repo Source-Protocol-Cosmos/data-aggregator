@@ -8,7 +8,7 @@ import (
 
 	"github.com/pelletier/go-toml"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 )
 
 // GetConfig returns the configuration reading it from the config.toml file present inside the home directory

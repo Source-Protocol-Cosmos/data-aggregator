@@ -2,8 +2,8 @@ package wasm
 
 import (
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
-	"github.com/Source-Protocol-Cosmos/juno/v3/database"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules"
 )
 
 var (
