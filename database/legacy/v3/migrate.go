@@ -6,9 +6,9 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 
-	types "github.com/Source-Protocol-Cosmos/juno/v3/database/migrate/utils"
+	types "github.com/Source-Protocol-Cosmos/data-aggregator/v3/database/migrate/utils"
 )
 
 // Migrate implements database.Migrator

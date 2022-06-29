@@ -1,9 +1,9 @@
 package builder
 
 import (
-	"github.com/Source-Protocol-Cosmos/juno/v3/database"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/database/postgresql"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database/postgresql"
 )
 
 // Builder represents a generic Builder implementation that build the proper database

@@ -3,12 +3,12 @@ package v2
 import (
 	"time"
 
-	loggingconfig "github.com/Source-Protocol-Cosmos/juno/v3/logging/config"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/pruning"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/telemetry"
-	nodeconfig "github.com/Source-Protocol-Cosmos/juno/v3/node/config"
-	pricefeedconfig "github.com/Source-Protocol-Cosmos/juno/v3/pricefeed"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	loggingconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/logging/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/pruning"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/telemetry"
+	nodeconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/node/config"
+	pricefeedconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/pricefeed"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 )
 
 type Config struct {

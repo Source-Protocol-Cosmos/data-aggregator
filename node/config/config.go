@@ -3,8 +3,8 @@ package config
 import (
 	"gopkg.in/yaml.v3"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/node/local"
-	"github.com/Source-Protocol-Cosmos/juno/v3/node/remote"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/node/local"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/node/remote"
 )
 
 const (

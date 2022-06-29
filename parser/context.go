@@ -3,11 +3,11 @@ package parser
 import (
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/logging"
-	"github.com/Source-Protocol-Cosmos/juno/v3/node"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/logging"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/node"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/database"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/database"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules"
 )
 
 // Context represents the context that is shared among different workers

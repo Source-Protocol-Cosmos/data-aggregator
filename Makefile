@@ -13,8 +13,8 @@ all: lint test-unit install
 ###                                Build flags                              ###
 ###############################################################################
 
-LD_FLAGS = -X github.com/Source-Protocol-Cosmos/juno/v3/cmd.Version=$(VERSION) \
-	-X github.com/Source-Protocol-Cosmos/juno/v3/cmd.Commit=$(COMMIT)
+LD_FLAGS = -X github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd.Version=$(VERSION) \
+	-X github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd.Commit=$(COMMIT)
 
 BUILD_FLAGS := -ldflags '$(LD_FLAGS)'
 
@@ -24,11 +24,11 @@ BUILD_FLAGS := -ldflags '$(LD_FLAGS)'
 
 build: go.sum
 ifeq ($(OS),Windows_NT)
-	@echo "building juno binary..."
-	@go build -mod=readonly $(BUILD_FLAGS) -o build/juno.exe ./cmd/juno
+	@echo "building source-data-aggregator binary (sourceda)..."
+	@go build -mod=readonly $(BUILD_FLAGS) -o build/sourceda.exe ./cmd/sourceda
 else
-	@echo "building juno binary..."
-	@go build -mod=readonly $(BUILD_FLAGS) -o build/juno ./cmd/juno
+	@echo "building source-data-aggregator binary (sourceda)..."
+	@go build -mod=readonly $(BUILD_FLAGS) -o build/sourceda ./cmd/sourceda
 endif
 .PHONY: build
 
@@ -37,8 +37,8 @@ endif
 ###############################################################################
 
 install: go.sum
-	@echo "installing juno binary..."
-	@go install -mod=readonly $(BUILD_FLAGS) ./cmd/juno
+	@echo "installing source-data-aggregator binary (sourceda)..."
+	@go install -mod=readonly $(BUILD_FLAGS) ./cmd/sourceda
 .PHONY: install
 
 ###############################################################################
@@ -76,7 +76,7 @@ lint-fix:
 format:
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs gofmt -w -s
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs misspell -w
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs goimports -w -local github.com/Source-Protocol-Cosmos/juno
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs goimports -w -local github.com/Source-Protocol-Cosmos/data-aggregator
 .PHONY: format
 
 clean:

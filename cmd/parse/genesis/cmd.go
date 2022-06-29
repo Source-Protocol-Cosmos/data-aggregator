@@ -3,11 +3,11 @@ package genesis
 import (
 	"github.com/spf13/cobra"
 
-	parsecmdtypes "github.com/Source-Protocol-Cosmos/juno/v3/cmd/parse/types"
+	parsecmdtypes "github.com/Source-Protocol-Cosmos/data-aggregator/v3/cmd/parse/types"
 
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules"
-	nodeconfig "github.com/Source-Protocol-Cosmos/juno/v3/node/config"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/utils"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules"
+	nodeconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/node/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/utils"
 )
 
 const (

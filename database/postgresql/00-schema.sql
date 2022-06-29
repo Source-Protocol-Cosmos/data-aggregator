@@ -98,3 +98,4 @@ CREATE TABLE pruning
 (
     last_pruned_height BIGINT NOT NULL
 )
+

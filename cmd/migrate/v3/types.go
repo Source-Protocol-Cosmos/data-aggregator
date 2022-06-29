@@ -1,14 +1,14 @@
 package v3
 
 import (
-	databaseconfig "github.com/Source-Protocol-Cosmos/juno/v3/database/config"
-	loggingconfig "github.com/Source-Protocol-Cosmos/juno/v3/logging/config"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/pruning"
-	"github.com/Source-Protocol-Cosmos/juno/v3/modules/telemetry"
-	nodeconfig "github.com/Source-Protocol-Cosmos/juno/v3/node/config"
-	parserconfig "github.com/Source-Protocol-Cosmos/juno/v3/parser/config"
-	pricefeedconfig "github.com/Source-Protocol-Cosmos/juno/v3/pricefeed"
-	"github.com/Source-Protocol-Cosmos/juno/v3/types/config"
+	databaseconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/database/config"
+	loggingconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/logging/config"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/pruning"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/modules/telemetry"
+	nodeconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/node/config"
+	parserconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/parser/config"
+	pricefeedconfig "github.com/Source-Protocol-Cosmos/data-aggregator/v3/pricefeed"
+	"github.com/Source-Protocol-Cosmos/data-aggregator/v3/types/config"
 )
 
 // Config defines all necessary juno configuration parameters.
